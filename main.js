@@ -25,15 +25,14 @@ function Sorting() {
 function Search() {
     Search_Value = document.getElementById("Search_value_input").value;
     Instances_found = 0;
-    var j;
-    for (j = 0; j < Inline_Names.length; j++) 
-    {
-        if (Search_Value == Block_Names[j]) {
+    for (j = 0; j < Inline_Names.length; j++) {
+        console.log(Inline_Names[j])
+        if (Search_Value == Inline_Names[j]) {
             Instances_found = Instances_found + 1;
-
         }
-        document.getElementById("instance_found_label").innerHTML = "Name found" +" "+ Instances_found + " "+"time";
+
+        document.getElementById("instance_found_label").innerHTML = "Name found" + " " + Instances_found + " " + "time";
         console.log(Instances_found);
     }
-   
+
 }
